@@ -27,7 +27,7 @@ $mail->Body = '<h1>Email Test</h1>
     PHPMailer</a> class.</p>';
 $mail->SMTPAuth = true;
 $mail->SMTPSecure = 'tls';
-$mail->Port = 587;
+$mail->Port = 25;
 $mail->isHTML(true);
 
 $mail->AltBody = "Email Test\r\nThis email was sent through the 
