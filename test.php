@@ -1,8 +1,12 @@
 <?php
-error_reporting(E_ALL);
+error_reporting('E_ALL');
+ini_set('display_errors', 1);
 
-	
-	include_once('class.phpmailer.php');
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+//Load Composer's autoloader
+require 'vendor/autoload.php';
 	
 	$to = "talktodhi@gmail.com";
 	$subject = "Test Mail Subject";
