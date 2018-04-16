@@ -91,6 +91,7 @@ $mail->isHTML(true);
 // line break.
 $mail->AltBody = "Email Test\r\nThis email was sent through the 
     Amazon SES SMTP interface using the PHPMailer class.";
+	die('Here');
 var_dump(!$mail->send());
 if(!$mail->send()) {
     echo "Email not sent. " , $mail->ErrorInfo , PHP_EOL;
