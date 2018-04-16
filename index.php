@@ -1,6 +1,6 @@
 <?php
 
-$fp = fsockopen('127.0.0.1', 25, $errno, $errstr, 5);
+$fp = fsockopen('127.0.0.1', 587, $errno, $errstr, 5);
 if (!$fp) {
     // port is closed or blocked
 	echo "Blocked";
