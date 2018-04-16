@@ -34,7 +34,7 @@ $mail->Password = 'ArbuLDgAAXNcFoab6O2KHB7CGrCAvUvEZzE/7QX0zzoN';
     
 // Specify a configuration set. If you do not want to use a configuration
 // set, comment or remove the next line.
-$mail->addCustomHeader('X-SES-CONFIGURATION-SET', 'ConfigSet');
+//$mail->addCustomHeader('X-SES-CONFIGURATION-SET', 'ConfigSet');
  
 // If you're using Amazon SES in a region other than US West (Oregon), 
 // replace email-smtp.us-west-2.amazonaws.com with the Amazon SES SMTP  
@@ -56,7 +56,7 @@ $mail->SMTPAuth = true;
 
 // Enable TLS encryption over port 587
 $mail->SMTPSecure = 'tls';
-$mail->Port = 465;
+$mail->Port = 587;
 
 // Tells PHPMailer to send HTML-formatted email
 $mail->isHTML(true);
