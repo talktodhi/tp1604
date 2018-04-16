@@ -56,7 +56,7 @@ $mail->SMTPAuth = true;
 
 // Enable TLS encryption over port 587
 $mail->SMTPSecure = 'tls';
-$mail->Port = 587;
+$mail->Port = 465;
 
 // Tells PHPMailer to send HTML-formatted email
 $mail->isHTML(true);
